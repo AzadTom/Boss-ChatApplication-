@@ -19,7 +19,7 @@ This project is based on Firebased in whcih user can chat simply chat & User can
 
 ## Screenshots From this project
 ### You can Install and test VoiceNotes Android App from below 👇
-[![Bold Chat](https://img.shields.io/badge/Bold-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/AzadTom/Boss-ChatApplication-/blob/master/app/release/app-release.apk)
+[![Bold Chat](https://github.com/AzadTom/Boss-ChatApplication-/raw/master/app/release/app-release.apk)
 
 
 
