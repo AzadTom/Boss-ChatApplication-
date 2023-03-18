@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/105869036/226121167-fe53101d-bbf5-4699-a585-ea358f50885e.png)
 
 ## BOLD CHAT USING FIREBASE
-This project is based on Firebased in whcih user can chat simply chat
+This project is based on Firebase in whcih user can chat simply chat
 
 ## About this Project
 This project is based on Firebased in whcih user can chat simply chat & User can signup and login & enter home screen & also introducing searching features and recent conversation and add time & last message features as well
