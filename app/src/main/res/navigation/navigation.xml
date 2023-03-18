@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.boss.Fragment.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreen_to_getStarted"
+            app:destination="@id/getStarted" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStarted"
+        android:name="com.example.boss.Fragment.GetStarted"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started">
+        <action
+            android:id="@+id/action_getStarted_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_getStarted_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.boss.Authentication.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_signIn_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.boss.Authentication.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_signUp_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.boss.Fragment.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_alluser"
+            app:destination="@id/alluser" />
+        <action
+            android:id="@+id/action_homeScreen_to_chatScreen"
+            app:destination="@id/chatScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_search_action"
+            app:destination="@id/search_action" />
+    </fragment>
+    <argument
+        android:name="userinfo" />
+    <fragment
+        android:id="@+id/alluser"
+        android:name="com.example.boss.Fragment.Alluser"
+        android:label="fragment_alluser"
+        tools:layout="@layout/fragment_alluser" >
+        <action
+            android:id="@+id/action_alluser_to_chatScreen"
+            app:destination="@id/chatScreen" />
+        <action
+            android:id="@+id/action_alluser_to_search_action"
+            app:destination="@id/search_action" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_action"
+        android:name="com.example.boss.Fragment.Search_action"
+        android:label="fragment_search_action"
+        tools:layout="@layout/fragment_search_action" >
+        <action
+            android:id="@+id/action_search_action_to_chatScreen"
+            app:destination="@id/chatScreen" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/chatScreen"
+        android:name="com.example.boss.Fragment.chatScreen"
+        android:label="fragment_chat_screen"
+        tools:layout="@layout/fragment_chat_screen" >
+        <argument
+            android:name="chatuser"
+            app:argType="com.example.boss.Model.User" />
+    </fragment>
+</navigation>
